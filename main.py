@@ -33,7 +33,7 @@ class UserManager:
         try:
             return f'Вы искали: "{self.users[username]}".'
         except KeyError as e:
-            raise UserNotFoundError(f'Пользователm с именем "{username}" не найден.')
+            raise UserNotFoundError(f'Пользователь с именем "{username}" не найден.')
 
 def main():
     manager = UserManager()
